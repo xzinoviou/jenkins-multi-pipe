@@ -6,6 +6,7 @@ pipeline {
                 echo '[--- Building step ---]'
                 sleep 5
                 echo 'Finished Building'
+                echo "STEP : END"
                 
             }
     }
@@ -15,6 +16,7 @@ pipeline {
             echo '[--- Running tests ---]'
                 sleep 5
                 echo 'Finished Running tests'
+                echo "STEP : END"
         }
     }
     
@@ -23,6 +25,7 @@ pipeline {
             echo '[--- Staging ---]'
                 sleep 5
                 echo 'Finished Staging'
+                echo "STEP : END"
         }
     }
     
@@ -31,6 +34,7 @@ pipeline {
             echo '[--- Deploying ---]'
                 sleep 5
                 echo 'Finished Deploying'
+                echo "STEP : END"
         }
     }
   }
