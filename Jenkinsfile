@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo '[--- Building step ---]'
-                sleep 3
+                sleep 5
                 echo 'Finished Building'
                 
             }
@@ -13,7 +13,7 @@ pipeline {
     stage('Test'){
         steps{
             echo '[--- Running tests ---]'
-                sleep 3
+                sleep 5
                 echo 'Finished Running tests'
         }
     }
@@ -21,7 +21,7 @@ pipeline {
     stage('Staging'){
         steps{
             echo '[--- Staging ---]'
-                sleep 3
+                sleep 5
                 echo 'Finished Staging'
         }
     }
@@ -29,7 +29,7 @@ pipeline {
     stage('Deploy'){
         steps{
             echo '[--- Deploying ---]'
-                sleep 3
+                sleep 5
                 echo 'Finished Deploying'
         }
     }
